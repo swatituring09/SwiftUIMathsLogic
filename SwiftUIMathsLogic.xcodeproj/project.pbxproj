@@ -14,6 +14,8 @@
 		CB23B4002D8864AB003942AB /* SwiftUIMathsLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3FF2D8864AB003942AB /* SwiftUIMathsLogicTests.swift */; };
 		CB23B40A2D8864AB003942AB /* SwiftUIMathsLogicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B4092D8864AB003942AB /* SwiftUIMathsLogicUITests.swift */; };
 		CB23B40C2D8864AB003942AB /* SwiftUIMathsLogicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B40B2D8864AB003942AB /* SwiftUIMathsLogicUITestsLaunchTests.swift */; };
+		CB23B41B2D8875A3003942AB /* FactorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B41A2D8875A3003942AB /* FactorialView.swift */; };
+		CBA4FBB22D88A64000A3D91F /* FactorialTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA4FBB12D88A64000A3D91F /* FactorialTestCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CB23B4052D8864AB003942AB /* SwiftUIMathsLogicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIMathsLogicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB23B4092D8864AB003942AB /* SwiftUIMathsLogicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMathsLogicUITests.swift; sourceTree = "<group>"; };
 		CB23B40B2D8864AB003942AB /* SwiftUIMathsLogicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMathsLogicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB23B41A2D8875A3003942AB /* FactorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialView.swift; sourceTree = "<group>"; };
+		CBA4FBB12D88A64000A3D91F /* FactorialTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorialTestCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				CB23B3F02D8864A5003942AB /* ContentView.swift */,
 				CB23B3F22D8864AA003942AB /* Assets.xcassets */,
 				CB23B3F42D8864AA003942AB /* Preview Content */,
+				CB23B41A2D8875A3003942AB /* FactorialView.swift */,
+				CBA4FBB12D88A64000A3D91F /* FactorialTestCases.swift */,
 			);
 			path = SwiftUIMathsLogic;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB23B3F12D8864A5003942AB /* ContentView.swift in Sources */,
+				CB23B41B2D8875A3003942AB /* FactorialView.swift in Sources */,
 				CB23B3EF2D8864A5003942AB /* SwiftUIMathsLogicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB23B4002D8864AB003942AB /* SwiftUIMathsLogicTests.swift in Sources */,
+				CBA4FBB22D88A64000A3D91F /* FactorialTestCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

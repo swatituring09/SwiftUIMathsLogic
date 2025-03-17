@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIMathsLogicApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FactorialView()
         }
     }
 }

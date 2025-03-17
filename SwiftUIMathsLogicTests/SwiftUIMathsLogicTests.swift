@@ -1,36 +1,53 @@
-//
-//  SwiftUIMathsLogicTests.swift
-//  SwiftUIMathsLogicTests
-//
-//  Created by Ruchi Kumar on 17/03/25.
-//
-
 import XCTest
-@testable import SwiftUIMathsLogic
+@testable import SwiftUIMathsLogic  // Replace with your actual module name
 
-final class SwiftUIMathsLogicTests: XCTestCase {
+class FibonacciTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewModel: FibonacciViewModel!
+
+    override func setUp() {
+        super.setUp()
+        viewModel = FibonacciViewModel()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        viewModel = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    // Test Case 1: Generating Fibonacci for input 5
+    func testFibonacciForFive() {
+        let result = viewModel.generateFibonacci(n: 5)
+        XCTAssertEqual(result, [0, 1, 1, 2, 3], "Fibonacci sequence for 5 is incorrect")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    // Test Case 2: Generating Fibonacci for input 10
+    func testFibonacciForTen() {
+        let result = viewModel.generateFibonacci(n: 10)
+        XCTAssertEqual(result, [0, 1, 1, 2, 3, 5, 8, 13, 21, 34], "Fibonacci sequence for 10 is incorrect")
     }
-
+    
+    // Test Case 3: Edge case - Fibonacci for input 1
+    func testFibonacciForOne() {
+        let result = viewModel.generateFibonacci(n: 1)
+        XCTAssertEqual(result, [0], "Fibonacci sequence for 1 should be [0]")
+    }
+    
+    // Test Case 4: Edge case - Fibonacci for input 2
+    func testFibonacciForTwo() {
+        let result = viewModel.generateFibonacci(n: 2)
+        XCTAssertEqual(result, [0, 1], "Fibonacci sequence for 2 should be [0, 1]")
+    }
+    
+    // Test Case 5: Edge case - Fibonacci for input 0
+    func testFibonacciForZero() {
+        let result = viewModel.generateFibonacci(n: 0)
+        XCTAssertEqual(result, [], "Fibonacci sequence for 0 should be empty")
+    }
+    
+    // Test Case 6: Edge case - Fibonacci for negative input
+    func testFibonacciForNegative() {
+        let result = viewModel.generateFibonacci(n: -3)
+        XCTAssertEqual(result, [], "Fibonacci sequence for negative input should be empty")
+    }
 }
